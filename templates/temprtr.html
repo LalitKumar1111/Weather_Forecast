@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 360px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: brown;
+            margin: 80px auto -40px;
+            background-image: linear-gradient(to top, rgb(11, 84, 133) , rgb(19, 168, 194),rgb(11, 84, 133),rgb(19, 168, 194));
+        }
+        h1{
+            text-align: center;
+            color: rgb(7, 69, 80);
+            text-decoration: underline;
+        }
+        .txt{
+            font-size: 20px;
+            color:rgb(0, 204, 255);
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>{{ c }}</h1>
+        <div class="txt"> Condition: {{ condi }} </div>
+	    <div class="txt"> Temperature (C): {{ temp }} degrees </div>
+        <div class="txt"> Feels Like (C): {{ like }} degrees </div>
+        <div class="txt"> Min Temp: {{ mint }} degrees </div>
+        <div class="txt"> Max Temp: {{ maxt }} degrees </div>
+        <div class="txt"> Pressure: {{ pres }} mb </div>
+        <div class="txt"> Humidity: {{ hum }} % </div>
+        <div class="txt"> Wind: {{ wnd }} km/h </div>
+        <div class="txt"> Sunrise: {{ snrs }}  </div>
+        <div class="txt"> Sunset: {{ snst }}  </div>
+
+    </div>
+    
+</body>
+</html>
